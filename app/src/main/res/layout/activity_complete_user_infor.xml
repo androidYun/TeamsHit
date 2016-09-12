@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/camera_icon" />
+
+        <TextView
+            android:id="@+id/txt_nick_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_user_name_title"
+            android:layout_toEndOf="@+id/img_head"
+            android:layout_toRightOf="@+id/img_head"
+            android:padding="15dp"
+            android:text="昵称"
+            android:textSize="@dimen/sixten" />
+
+        <EditText
+            android:id="@+id/edit_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_nick_name_title"
+            android:background="@null"
+            android:hint="请输入昵称"
+            android:padding="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.65dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_head"
+            android:background="@color/divider"></View>
+
+        <TextView
+            android:id="@+id/txt_user_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edit_user_name"
+            android:layout_alignTop="@+id/edit_user_name"
+            android:layout_toEndOf="@+id/img_head"
+            android:layout_toRightOf="@+id/img_head"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="用户名"
+            android:textSize="@dimen/sixten" />
+
+        <EditText
+            android:id="@+id/edit_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_head"
+            android:layout_below="@+id/edit_nick_name"
+            android:layout_toRightOf="@+id/txt_nick_name_title"
+            android:background="@null"
+            android:hint="请输入用户名"
+            android:padding="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        style="@style/complete_user_infor"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/complete_user_infor_title"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/txt_sex"
+            style="@style/complete_user_infor_content"
+            android:layout_alignParentRight="true"
+            android:text="请选择" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/complete_user_infor"
+
+        android:layout_marginTop="3dp">
+
+        <TextView
+            style="@style/complete_user_infor_title"
+            android:text="所在城市" />
+
+        <TextView
+            android:id="@+id/txt_city"
+            style="@style/complete_user_infor_content"
+            android:layout_alignParentRight="true"
+            android:text="请选择" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        style="@style/complete_user_infor"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            style="@style/complete_user_infor_title"
+            android:text="出生日期" />
+
+        <TextView
+            android:id="@+id/txt_birthday"
+            style="@style/complete_user_infor_content"
+            android:layout_alignParentRight="true"
+            android:text="请选择" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_confirm"></include>
+
+    <View
+        android:id="@+id/vMasker"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e0000000"
+        android:visibility="gone" />
+</LinearLayout>

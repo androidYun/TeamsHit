@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/navi_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_confirm"
+        android:layout_below="@+id/navi_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <teams.xianlin.com.teamshit.widget.FriendCircle.MultiImageView
+                android:id="@+id/multiImagView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:paddingRight="20dp" />
+
+            <RelativeLayout
+                style="@style/common_layout"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/txt_group_people"
+                    style="@style/common_layout_left_title"
+                    android:text="全部群成员(32)" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_group_number"
+                style="@style/common_layout"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    style="@style/common_layout_left_title"
+                    android:text="房间号码" />
+
+                <TextView
+                    android:id="@+id/txt_group_id"
+                    style="@style/common_layout_right_title"
+                    android:layout_alignParentRight="true"
+                    android:text="1036" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_group_name"
+                style="@style/common_layout"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    style="@style/common_layout_left_title"
+                    android:text="房间名称" />
+
+                <TextView
+                    android:id="@+id/txt_group_name"
+                    style="@style/common_layout_right_title"
+                    android:layout_toLeftOf="@+id/img_group_name"
+                    android:text="1036" />
+
+                <ImageView
+                    android:id="@+id/img_group_name"
+                    style="@style/common_layout_right_next_img"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/selector_next" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_group_type"
+                style="@style/common_layout"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    style="@style/common_layout_left_title"
+                    android:text="游戏模式" />
+
+                <TextView
+                    android:id="@+id/txt_group_type"
+                    style="@style/common_layout_right_title"
+                    android:layout_toLeftOf="@+id/img_group_type"
+                    android:text="1036" />
+
+                <ImageView
+                    android:id="@+id/img_group_type"
+                    style="@style/common_layout_right_next_img"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/selector_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_group_verifition"
+                style="@style/common_layout"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    style="@style/common_layout_left_title"
+                    android:text="群组验证" />
+
+                <TextView
+                    android:id="@+id/txt_group_verifition"
+                    style="@style/common_layout_right_title"
+                    android:layout_toLeftOf="@+id/img_group_verifition"
+                    android:text="允许任何人加入" />
+
+                <ImageView
+                    android:id="@+id/img_group_verifition"
+                    style="@style/common_layout_right_next_img"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/selector_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_game_number"
+                style="@style/common_layout"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    style="@style/common_layout_left_title"
+                    android:text="游戏人数" />
+
+                <TextView
+                    android:id="@+id/txt_game_people"
+                    style="@style/common_layout_right_title"
+                    android:layout_toLeftOf="@+id/img_group_people"
+                    android:text="10" />
+
+                <ImageView
+                    android:id="@+id/img_group_people"
+                    style="@style/common_layout_right_next_img"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/selector_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_rule"
+                style="@style/common_layout"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    style="@style/common_layout_left_title"
+                    android:text="游戏规则" />
+
+
+                <ImageView
+                    style="@style/common_layout_right_next_img"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/selector_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/common_layout"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    style="@style/common_layout_left_title"
+                    android:text="消息免打扰" />
+
+
+                <CheckBox
+                    android:id="@+id/cbx_message_disturb"
+                    style="@style/common_layout_right_next_img"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/selector_switch"
+                    android:button="@null"
+                    android:checked="false"
+                    android:src="@drawable/selector_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_coin_number"
+                style="@style/common_layout"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    style="@style/common_layout_left_title"
+                    android:text="最低碰碰币" />
+
+                <TextView
+                    android:id="@+id/txt_coin_number"
+                    style="@style/common_layout_right_title"
+                    android:layout_toLeftOf="@+id/img_coin_number"
+                    android:text="10" />
+
+                <ImageView
+                    android:id="@+id/img_coin_number"
+                    style="@style/common_layout_right_next_img"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/selector_next" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/delete_friend"
+        android:enabled="true"
+        android:padding="15dp"
+        android:text="退出房间"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sixten" />
+</RelativeLayout>

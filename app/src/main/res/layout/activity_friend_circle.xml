@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <teams.xianlin.com.teamshit.widget.TitleNavi
+            android:id="@+id/navi_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_take_about"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:hint="@string/this_moment_you_yhing"
+            android:paddingLeft="20dp"
+            android:textColor="@color/gray_color" />
+
+        <teams.xianlin.com.teamshit.widget.NoScrollGridview
+            android:id="@+id/gvi_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:numColumns="4"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlative_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:padding="@dimen/normal_margin">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="谁可以看" />
+
+            <TextView
+                android:id="@+id/txt_look_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="所有人" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

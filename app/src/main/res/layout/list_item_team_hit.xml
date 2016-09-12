@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="25dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="设备名称(状态)"
+            android:textColor="@color/alway_text_black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt_handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:text="解除账号绑定"
+            android:textColor="@color/pink_color"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_config_wifi"
+            style="@style/congfig_wifi_item_style"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_config_wifi"
+            android:text="配置WiFi" />
+
+        <TextView
+            android:id="@+id/txt_modify_device_name"
+            style="@style/congfig_wifi_item_style"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_device_name"
+            android:text="修改设备名称" />
+
+        <TextView
+            android:id="@+id/txt_buzzer_switch"
+            style="@style/congfig_wifi_item_style"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_buzzer_close"
+            android:text="蜂鸣器开关" />
+
+        <TextView
+            android:id="@+id/txt_light_switch"
+            style="@style/congfig_wifi_item_style"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_light_close"
+            android:text="指示灯开关" />
+    </LinearLayout>
+
+
+</LinearLayout>

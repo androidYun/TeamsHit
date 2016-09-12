@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/btn_cancle_color"></solid>
+    <stroke
+        android:width="0.35dp"
+        android:color="@color/alway_text_gray" />
+</shape>

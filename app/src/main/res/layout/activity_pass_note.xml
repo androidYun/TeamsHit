@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/selector_bg_color"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/pass_note_navi_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ListView
+        android:id="@+id/list_pass_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/pass_note_navi_buttom"
+        android:layout_below="@+id/pass_note_navi_top"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_list_bg"></ListView>
+
+    <LinearLayout
+        android:id="@+id/pass_note_navi_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/hlvi_expre"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_text"
+            style="@style/pass_note_buttom_navi"
+            android:src="@drawable/pass_note_text" />
+
+        <ImageView
+            android:id="@+id/img_photo"
+            style="@style/pass_note_buttom_navi"
+            android:src="@drawable/pass_note_photo" />
+
+        <ImageView
+            android:id="@+id/img_expresstion"
+            style="@style/pass_note_buttom_navi"
+            android:src="@drawable/pass_note_expresstion" />
+
+        <ImageView
+            android:id="@+id/img_qrcode"
+            style="@style/pass_note_buttom_navi"
+            android:src="@drawable/pass_note_print" />
+
+        <ImageView
+            android:id="@+id/img_brush"
+            style="@style/pass_note_buttom_navi"
+            android:src="@drawable/pass_note_brush" />
+
+        <ImageView
+            android:id="@+id/img_time"
+            style="@style/pass_note_buttom_navi"
+            android:src="@drawable/pass_note_time" />
+    </LinearLayout>
+
+    <teams.xianlin.com.teamshit.widget.HorizontalListView
+        android:id="@+id/hlvi_expre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pass_note_express_navi_buttom"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/pass_note_express_navi_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_experss"
+            style="@style/pass_note_express_buttom_navi"
+            android:layout_weight="1"
+            android:text="@string/txt_experss" />
+
+        <TextView
+            android:id="@+id/txt_food"
+            style="@style/pass_note_express_buttom_navi"
+            android:layout_weight="1"
+            android:text="@string/txt_food" />
+
+
+        <TextView
+            android:id="@+id/txt_bubble"
+            style="@style/pass_note_express_buttom_navi"
+            android:layout_weight="1"
+            android:text="@string/txt_bubble" />
+
+
+        <TextView
+            android:id="@+id/txt_lace"
+            style="@style/pass_note_express_buttom_navi"
+            android:layout_weight="1"
+            android:text="@string/txt_lace" />
+
+        <TextView
+            android:id="@+id/txt_postmark"
+            style="@style/pass_note_express_buttom_navi"
+            android:layout_weight="1"
+            android:text="@string/txt_postmark" />
+
+
+        <TextView
+            android:id="@+id/txt_explore"
+            style="@style/pass_note_express_buttom_navi"
+            android:layout_weight="1"
+            android:text="@string/txt_explore" />
+    </LinearLayout>
+
+</RelativeLayout>

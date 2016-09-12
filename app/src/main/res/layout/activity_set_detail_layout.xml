@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/navi_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/layout_set_display_name"
+        style="@style/left_txt_right_img_layout"
+        android:layout_marginTop="19dp">
+
+        <TextView
+            style="@style/left_txt_right_img_txt"
+            android:text="设置备注及标签" />
+
+        <TextView
+            android:id="@+id/txt_display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/img_next"
+            android:text="备注" />
+
+        <ImageView
+            android:id="@+id/img_next"
+            style="@style/left_txt_right_img_img"
+            android:src="@drawable/selector_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_not_his_look_friend_circle"
+        style="@style/left_txt_right_img_layout"
+        android:layout_marginTop="19dp">
+
+        <TextView
+            style="@style/left_txt_right_img_txt"
+            android:text="不让他看我的朋友圈" />
+
+        <CheckBox
+            android:id="@+id/ckb_not_his_look_friend_circle"
+            style="@style/left_txt_right_img_img"
+            android:background="@drawable/selector_switch"
+            android:button="@null"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_not_look_friend_circle"
+        style="@style/left_txt_right_img_layout">
+
+        <TextView
+            style="@style/left_txt_right_img_txt"
+            android:text="不看他的朋友圈" />
+
+        <CheckBox
+            android:id="@+id/ckb_not_look_friend_circle"
+            style="@style/left_txt_right_img_img"
+            android:background="@drawable/selector_switch"
+            android:button="@null"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_join_black"
+        style="@style/left_txt_right_img_layout"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            style="@style/left_txt_right_img_txt"
+            android:text="加入黑名单" />
+
+        <CheckBox
+            android:id="@+id/ckb_join_black"
+            style="@style/left_txt_right_img_img"
+            android:background="@drawable/selector_switch"
+            android:button="@null"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/delete_friend"
+        android:enabled="true"
+        android:padding="15dp"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sixten" />
+</LinearLayout>

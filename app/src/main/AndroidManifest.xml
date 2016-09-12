@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="teams.xianlin.com.teamshit">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="20" />
+    <!--在SDCard中创建与删除文件权限-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--往SDCard写入数据权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--从SDCard读取数据权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--the following two permissions are required if you want to take photo in selector-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--获取wifi配置-->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+
+    <application
+        android:name=".TeamsHitApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="teams.xianlin.com.teamshit.TeamHitGlideModule"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="e09af6a2b26c02086e9216bd07c960ae"></meta-data>
+
+        <activity android:name=".Activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <activity
+            android:name="teams.xianlin.com.teamshit.Activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".Activity.PublishFriendCircleActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <activity
+            android:name=".Activity.CompleteUserInforActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--聚合会话列表-->
+        <activity
+            android:name="teams.xianlin.com.teamshit.Activity.SubConversationListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="teams.xianlin.com.teamshit"
+                    android:path="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!--单聊对话-->
+        <activity
+            android:name=".Activity.ConversationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="teams.xianlin.com.teamshit"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!--聊天室-->
+        <activity
+            android:name=".Activity.ChatRoomActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="teams.xianlin.com.teamshit"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.ConversationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="teams.xianlin.com.teamshit"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!--图片涂鸦-->
+        <activity
+            android:name=".Activity.GraffitiBoardImgActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--图片涂鸦-->
+        <activity
+            android:name=".Activity.GraffitiBoardActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--搜索新好友，或者是群组-->
+        <activity
+            android:name=".Activity.SearchFriendActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--好友详情-->
+        <activity
+            android:name=".Activity.FriendDetailActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--查找群组-->
+        <activity
+            android:name=".Activity.SearchGroupListActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--群组列表-->
+        <activity
+            android:name=".Activity.GroupListActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--创建群组-->
+        <activity
+            android:name=".Activity.CreateGroupActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--群组详情-->
+        <activity
+            android:name=".Activity.GroupDetailActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--添加好友-->
+        <activity
+            android:name=".Activity.AddFriendsActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--查看新朋友-->
+        <activity
+            android:name=".Activity.NewFriendActivity"
+            android:configChanges="orientation|screenSize"></activity>
+
+        <!--传纸条图片处理-->
+        <activity
+            android:name=".Activity.PassNotePhotoActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--传纸条-->
+        <activity
+            android:name=".Activity.PassNoteActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--文字处理-->
+        <activity
+            android:name=".Activity.PassNoteEditTextActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--wifi链接-->
+        <activity
+            android:name=".Activity.BindTeamHitActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--wifi选择-->
+        <activity
+            android:name=".Activity.SelectorWifiActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--wifi链接-->
+        <activity
+            android:name=".Activity.LinkWifiActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--配置wifi成功-->
+        <activity
+            android:name=".Activity.ConfigWifiSuccessActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--配置wifi失败-->
+        <activity
+            android:name=".Activity.ConfigWifiFailActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--扫描二维码-->
+        <activity
+            android:name=".Activity.ScanQrBindTeamActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--扫描二维码总类-->
+        <activity
+            android:name=".Activity.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <!--个人信息详情-->
+        <activity
+            android:name=".Activity.UserInforActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--个人信息详情-->
+        <activity
+            android:name=".Activity.SingleChatInforActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--设置好友详情-->
+        <activity
+            android:name=".Activity.SetFriendDataActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--发送位置地图-->
+        <activity
+            android:name=".Activity.AMAPLocationActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--选择创建群-->
+        <activity
+            android:name=".Activity.StartGroupChatActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--朋友圈-->
+        <activity
+            android:name=".Activity.FriendCircleActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--朋友圈最新消息-->
+        <activity
+            android:name=".Activity.FriendCircleMessageActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--朋友圈最新消息-->
+        <activity
+            android:name=".Activity.ImagePagerActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--广播-->
+        <receiver
+            android:name="teams.xianlin.com.teamshit.JPush.RongYunPush"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <!--wifi监听广播-->
+        <receiver android:name=".BroadCastService.WifiReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.RSSI_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--配置数据-->
+        <!--融云推送-->
+    </application>
+
+</manifest>

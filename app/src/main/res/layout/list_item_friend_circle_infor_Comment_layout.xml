@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="24dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="17dp">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/default_head" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_head"
+        android:layout_toRightOf="@+id/img_head"
+        android:text="小马哥"
+        android:textColor="@color/btn_confirm_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_head"
+        android:text="看见了啊"
+        android:textColor="@color/alway_text_gray" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_head"
+        android:layout_toRightOf="@+id/img_head"
+        android:textColor="@color/alway_text_gray" />
+</RelativeLayout>

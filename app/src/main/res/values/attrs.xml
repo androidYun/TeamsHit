@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="line_view">
+        <attr name="lineColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="PercentLinearLayout">
+        <attr name="layout_widthPercent" format="string" />
+        <attr name="layout_heightPercent" format="string" />
+
+        <attr name="layout_marginPercent" format="string" />
+        <attr name="layout_marginLeftPercent" format="string" />
+        <attr name="layout_marginTopPercent" format="string" />
+        <attr name="layout_marginRightPercent" format="string" />
+        <attr name="layout_marginBottomPercent" format="string" />
+        <attr name="layout_marginStartPercent" format="string" />
+        <attr name="layout_marginEndPercent" format="string" />
+
+        <attr name="layout_textSizePercent" format="string" />
+
+        <attr name="layout_maxWidthPercent" format="string" />
+        <attr name="layout_maxHeightPercent" format="string" />
+        <attr name="layout_minWidthPercent" format="string" />
+        <attr name="layout_minHeightPercent" format="string" />
+
+        <attr name="layout_paddingPercent" format="string" />
+        <attr name="layout_paddingTopPercent" format="string" />
+        <attr name="layout_paddingBottomPercent" format="string" />
+        <attr name="layout_paddingLeftPercent" format="string" />
+        <attr name="layout_paddingRightPercent" format="string" />
+    </declare-styleable>
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="horizontalSwipeOffset" format="dimension" />
+        <attr name="verticalSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="superrecyclerview">
+        <attr name="layout_empty" format="reference" />
+        <attr name="layout_moreProgress" format="reference" />
+        <attr name="layout_progress" format="reference" />
+        <attr name="recyclerClipToPadding" format="boolean" />
+        <attr name="recyclerPadding" format="dimension" />
+        <attr name="recyclerPaddingTop" format="dimension" />
+        <attr name="recyclerPaddingBottom" format="dimension" />
+        <attr name="recyclerPaddingLeft" format="dimension" />
+        <attr name="recyclerPaddingRight" format="dimension" />
+        <attr name="scrollbarStyle">
+            <flag name="insideOverlay" value="0x0" />
+            <flag name="insideInset" value="0x01000000" />
+            <flag name="outsideOverlay" value="0x02000000" />
+            <flag name="outsideInset" value="0x03000000" />
+        </attr>
+        <attr name="mainLayoutId" format="reference" />
+    </declare-styleable>
+    <dimen name="swipe_progress_bar_height">8dp</dimen>
+    <item name="recyclerview_swipe" type="id" />
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpb_background_progressbar_color" format="color" />
+        <attr name="cpb_background_progressbar_width" format="dimension" />
+        <attr name="cpb_progressbar_color" format="color" />
+        <attr name="cpb_progressbar_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="PraiseListView">
+        <attr name="item_color" format="color" />
+        <attr name="item_selector_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandTextView">
+        <attr name="showLines" format="integer" />
+    </declare-styleable>
+    <!--
+            border_thickness         设置边框的宽度
+            border_inside_color     设置内边框的颜色
+            border_outside_color     设置外边框的颜色
+            内外边框如果只设置一个的话，则认为只显示一个边框。
+         -->
+    <declare-styleable name="RoundImageView">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color" />
+    </declare-styleable>
+</resources>

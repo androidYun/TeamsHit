@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="drag_item_normal_height">48dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="title_navi">60dp</dimen>
+    <dimen name="normal_margin">16dp</dimen>
+    <dimen name="sixten">16dp</dimen>
+    <dimen name="fiveten">15dp</dimen>
+    <dimen name="gudieview_width">6dp</dimen>
+    <dimen name="gudieview_heigh">6dp</dimen>
+    <dimen name="dice_width">37dp</dimen>
+    <dimen name="dice_height">37dp</dimen>
+</resources>

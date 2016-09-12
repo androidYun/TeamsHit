@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择性别" />
+
+        <RadioGroup
+            android:id="@+id/rgroup_selelct_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_boy"
+                style="@style/complete_user_infor_select_sex"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="男"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbtn_gril"
+                style="@style/complete_user_infor_select_sex"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="女" />
+
+            <RadioButton
+                android:id="@+id/rbtn_secrecy"
+                style="@style/complete_user_infor_select_sex"
+                android:layout_weight="1"
+                android:text="保密" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="34dp">
+
+            <TextView
+                android:id="@+id/txt_select_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="17dp"
+                android:text="确定"
+                android:textColor="@color/rbtn_select_color"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_selelct_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/txt_select_confirm"
+                android:padding="17dp"
+                android:text="取消"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_navi"
+    android:background="@color/white"
+    tools:context=".Activity.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/img_back" />
+
+    <EditText
+        android:id="@+id/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/alway_text_black"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/img_back"
+        android:layout_toRightOf="@+id/img_back"
+        android:background="@drawable/shape_search_bg"
+        android:drawableLeft="@drawable/icon_search"
+        android:drawablePadding="10dp"
+        android:hint="搜索"
+        android:paddingBottom="11dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_button_navi"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <RadioGroup
+        android:id="@+id/main_rgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_team"
+            style="@style/main_button_navi_style"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_main_team"
+            android:text="对对碰" />
+
+        <RadioButton
+            android:id="@+id/rbtn_friend"
+            style="@style/main_button_navi_style"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_main_friend"
+            android:text="好友" />
+
+        <RadioButton
+            android:id="@+id/rbtn_find"
+            style="@style/main_button_navi_style"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_main_find"
+            android:text="发现" />
+
+
+        <RadioButton
+            android:id="@+id/rbtn_mine"
+            style="@style/main_button_navi_style"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_mian_mine"
+            android:text="我的" />
+    </RadioGroup>
+</LinearLayout>

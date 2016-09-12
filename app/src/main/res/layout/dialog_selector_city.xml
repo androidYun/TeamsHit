@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_wheel"
+        android:background="@color/white"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/txt_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="取消"
+            android:textColor="@color/btn_confirm_color"
+            android:textSize="@dimen/sixten" />
+
+        <TextView
+            android:id="@+id/txt_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="确定"
+            android:textColor="@color/btn_confirm_color"
+            android:textSize="@dimen/sixten" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_wheel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <teams.xianlin.com.teamshit.widget.WheelCity.View.WheelView
+            android:id="@+id/id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></teams.xianlin.com.teamshit.widget.WheelCity.View.WheelView>
+
+        <teams.xianlin.com.teamshit.widget.WheelCity.View.WheelView
+            android:id="@+id/id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></teams.xianlin.com.teamshit.widget.WheelCity.View.WheelView>
+
+        <teams.xianlin.com.teamshit.widget.WheelCity.View.WheelView
+            android:id="@+id/id_district"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></teams.xianlin.com.teamshit.widget.WheelCity.View.WheelView>
+    </LinearLayout>
+
+</RelativeLayout>

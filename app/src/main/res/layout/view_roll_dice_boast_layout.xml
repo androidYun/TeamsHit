@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_dice_cup"
+        android:layout_width="wrap_content"
+        android:layout_height="89dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/icon_roll_dice_cup" />
+
+    <teams.xianlin.com.teamshit.widget.Game.FiveDiceView
+        android:id="@+id/five_dice_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_toRightOf="@+id/txt_name" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:id="@+id/txt_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/view"
+            android:background="@drawable/shape_roll_dice"
+            android:text="@string/again_roll"
+            android:textColor="@color/btn_confirm_color" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txt_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/view"
+            android:background="@drawable/shape_roll_dice"
+            android:text="@string/confirm"
+            android:textColor="@color/btn_confirm_color" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/roll_the_dice_title"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

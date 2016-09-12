@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/navi_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="群组头像" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_friend_join_group"
+            android:id="@+id/img_add_head" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/common_layout"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/txt_group_name_title"
+            style="@style/common_layout_left_title"
+            android:text="群组名称" />
+
+        <EditText
+            android:id="@+id/edit_group_name"
+            style="@style/common_layout_right_next_img"
+            android:layout_marginLeft="37dp"
+            android:layout_toRightOf="@+id/txt_group_name_title"
+            android:background="@null"
+            android:hint="群名称" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/common_layout"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/txt_group_introduce"
+            style="@style/common_layout_left_title"
+            android:text="群组简介" />
+
+        <EditText
+            android:id="@+id/edit_group_introduce"
+            style="@style/common_layout_right_next_img"
+            android:layout_marginLeft="37dp"
+            android:layout_toRightOf="@+id/txt_group_introduce"
+            android:background="@null"
+            android:hint="群介绍" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_game_type"
+        style="@style/common_layout"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/common_layout_left_title"
+            android:text="游戏类型" />
+
+        <TextView
+            android:id="@+id/txt_game_type"
+            style="@style/complete_user_infor_content"
+            android:layout_toLeftOf="@+id/img_game_next"
+            android:text="21点" />
+
+        <ImageView
+            android:id="@+id/img_game_next"
+            style="@style/common_layout_right_next_img"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/selector_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_group_verifition"
+        style="@style/common_layout"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/common_layout_left_title"
+            android:text="群组验证" />
+
+        <TextView
+            android:id="@+id/txt_verifition_type"
+            style="@style/complete_user_infor_content"
+            android:layout_toLeftOf="@+id/img_group_verifition_next"
+            android:text="允许任何人加入" />
+
+        <ImageView
+            android:id="@+id/img_group_verifition_next"
+            style="@style/common_layout_right_next_img"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/selector_next" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_confirm" />
+</LinearLayout>

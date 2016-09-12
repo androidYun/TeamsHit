@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_bg_color"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_count_down"
+                android:gravity="center"
+                android:text="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="选择骰子数"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/shape_roll_dice_number_selector"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <teams.xianlin.com.teamshit.widget.RoundImageView
+                android:id="@+id/img_roll"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/open_five"
+                app:border_inside_color="@color/blue_selector_bg_color"
+                app:border_outside_color="@color/blue_selector_bg_color"
+                app:border_thickness="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RadioGroup
+            android:id="@+id/rdg_dice_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_one"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/rbtn_selector_dice_number"
+                android:button="@null"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbtn_two"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/rbtn_selector_dice_number"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/rbtn_three"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/rbtn_selector_dice_number"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/rbtn_four"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/rbtn_selector_dice_number"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/rbtn_five"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/rbtn_selector_dice_number"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/rbtn_add_one"
+
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/rbtn_selector_dice_number"
+                android:button="@null" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <teams.xianlin.com.teamshit.widget.RoundImageView
+                android:id="@+id/img_dice_one"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:src="@drawable/open_one"
+                android:tag="1"
+                app:border_inside_color="@color/white"
+                app:border_outside_color="@color/blue_selector_bg_color"
+                app:border_thickness="4dp" />
+
+            <teams.xianlin.com.teamshit.widget.RoundImageView
+                android:id="@+id/img_dice_two"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:src="@drawable/open_two"
+                android:tag="2"
+                app:border_inside_color="@color/white"
+                app:border_outside_color="@color/blue_selector_bg_color"
+                app:border_thickness="4dp" />
+
+            <teams.xianlin.com.teamshit.widget.RoundImageView
+                android:id="@+id/img_dice_three"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:src="@drawable/open_three"
+                android:tag="3"
+                app:border_inside_color="@color/white"
+                app:border_outside_color="@color/blue_selector_bg_color"
+                app:border_thickness="3dp" />
+
+            <teams.xianlin.com.teamshit.widget.RoundImageView
+                android:id="@+id/img_dice_four"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:src="@drawable/open_four"
+                android:tag="4"
+                app:border_inside_color="@color/white"
+                app:border_outside_color="@color/blue_selector_bg_color"
+                app:border_thickness="3dp" />
+
+            <teams.xianlin.com.teamshit.widget.RoundImageView
+                android:id="@+id/img_dice_five"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:src="@drawable/open_five"
+                android:tag="5"
+                app:border_inside_color="@color/white"
+                app:border_outside_color="@color/blue_selector_bg_color"
+                app:border_thickness="3dp" />
+
+            <teams.xianlin.com.teamshit.widget.RoundImageView
+                android:id="@+id/img_dice_sixten"
+                android:layout_width="@dimen/dice_width"
+                android:layout_height="@dimen/dice_height"
+                android:layout_margin="5dp"
+                android:src="@drawable/open_sixten"
+                android:tag="6"
+                app:border_inside_color="@color/white"
+                app:border_outside_color="@color/blue_selector_bg_color"
+                app:border_thickness="3dp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/btn_confirm_style"
+            android:layout_marginTop="10dp"
+            android:text="@string/confirm" />
+    </LinearLayout>
+</LinearLayout>

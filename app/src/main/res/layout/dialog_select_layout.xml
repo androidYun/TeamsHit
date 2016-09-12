@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_transparent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_cancle"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_corners_bg"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/dialog_select_content"
+
+            android:text="选择图片来源"
+            android:textColor="@color/gray_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.65dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_camera"
+            style="@style/dialog_select_content"
+            android:layout_marginTop="0.35dp"
+            android:text="拍照" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.65dp"
+            android:background="@color/transparent_background" />
+
+        <TextView
+            android:id="@+id/txt_photo_grally"
+            style="@style/dialog_select_content"
+            android:layout_marginTop="0.35dp"
+            android:text="相册" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_cancle"
+        style="@style/dialog_select_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_corners_white_bg"
+        android:text="取消" />
+
+
+</RelativeLayout>

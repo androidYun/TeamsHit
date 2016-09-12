@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/edit_text_navi_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_navi_top"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请输入文本信息"
+        android:padding="5dp" />
+
+    <ImageView
+        android:id="@+id/img_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lienar_edit_text"
+        android:layout_below="@+id/edit_text_navi_top"
+        android:src="@drawable/icon_head"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lienar_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/selector_bg_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_bold"
+            style="@style/pass_note_edit_text_buttom_navi"
+            android:background="@drawable/seletor_text_bold" />
+
+        <ImageView
+            android:id="@+id/img_size"
+            style="@style/pass_note_edit_text_buttom_navi"
+            android:background="@drawable/seletor_text_size" />
+
+        <ImageView
+            android:id="@+id/img_print"
+            style="@style/pass_note_edit_text_buttom_navi"
+            android:background="@drawable/seletor_text_print" />
+
+        <ImageView
+            android:id="@+id/img_align"
+            style="@style/pass_note_edit_text_buttom_navi"
+            android:background="@drawable/seletor_text_align" />
+
+        <ImageView
+            android:id="@+id/img_rotation"
+            style="@style/pass_note_edit_text_buttom_navi"
+            android:background="@drawable/seletor_text_rotation" />
+
+
+    </LinearLayout>
+</RelativeLayout>

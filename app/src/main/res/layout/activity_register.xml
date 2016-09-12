@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/navi_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navi_top"
+        android:background="@color/bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixten"
+            android:layout_marginTop="33dp"
+            android:text="我们将发送验证码到你的手机。"
+            android:textColor="@color/register_prompt"
+            android:textSize="@dimen/sixten" />
+
+        <RelativeLayout
+            style="@style/register_relative"
+            android:layout_marginTop="11dp">
+
+            <TextView
+                android:id="@+id/txt_phone"
+                style="@style/register_title"
+                android:text="手机号" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                style="@style/register_edit_content"
+                android:layout_marginRight="10dp"
+                android:inputType="number"
+                android:layout_toLeftOf="@+id/txt_code"
+                android:layout_toRightOf="@+id/txt_phone"
+                android:hint="请填写手机号" />
+
+            <View
+                android:layout_width="0.65dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txt_phone"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/txt_code"
+                android:background="@color/gray_color"></View>
+
+            <teams.xianlin.com.teamshit.widget.TimeTextView
+                android:id="@+id/txt_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="点击获取验证码" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.65dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.65dp"
+                android:layout_marginLeft="80dp"
+                android:background="@color/gray_color"></View>
+
+        </LinearLayout>
+
+
+        <RelativeLayout style="@style/register_relative">
+
+            <TextView
+                android:id="@+id/txt_phone_code"
+                style="@style/register_title"
+                android:text="验证码" />
+
+            <EditText
+                android:id="@+id/edit_code"
+                style="@style/register_edit_content"
+                android:layout_marginRight="10dp"
+                android:inputType="number"
+                android:layout_toRightOf="@+id/txt_phone_code"
+                android:hint="请填验证码" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/register_relative"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txt_pwd"
+                style="@style/register_title"
+                android:text="新密码" />
+
+            <EditText
+                android:id="@+id/edit_pwd"
+                style="@style/register_edit_content"
+                android:layout_marginRight="10dp"
+                android:inputType="textPassword"
+                android:layout_toRightOf="@+id/txt_pwd"
+                android:hint="请输入密码" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/layout_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+
+</RelativeLayout>

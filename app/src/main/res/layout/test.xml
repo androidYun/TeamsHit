@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<teams.xianlin.com.teamshit.widget.PercentLayout.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/default_head"
+        app:layout_heightPercent="10%w"
+        app:layout_marginBottomPercent="2%h"
+        app:layout_marginLeftPercent="3%w"
+        app:layout_marginTopPercent="2%h"
+        app:layout_widthPercent="10%w" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_head"
+        android:layout_toRightOf="@+id/img_head"
+        android:text="21.群"
+        android:textColor="@color/alway_text_black"
+        android:textSize="16dp"
+        app:layout_marginLeftPercent="4%w" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_head"
+        android:layout_toRightOf="@+id/img_head"
+        android:text="介绍介绍"
+        android:textColor="@color/alway_text_gray"
+        app:layout_marginLeftPercent="4%w" />
+</teams.xianlin.com.teamshit.widget.PercentLayout.PercentRelativeLayout>

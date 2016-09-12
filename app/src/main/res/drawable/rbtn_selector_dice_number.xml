@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/white" android:drawable="@drawable/shape_roll_dice_number_selector" android:state_checked="true" ></item>
+    <item android:color="@color/blue_bg_color" android:drawable="@drawable/shape_roll_dice_number_normal" android:state_checked="false"></item>
+</selector>

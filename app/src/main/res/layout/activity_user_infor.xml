@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/navi_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout style="@style/complete_user_infor">
+
+        <TextView
+            style="@style/complete_user_infor_title"
+            android:layout_centerVertical="true"
+            android:text="头像" />
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/camera_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/complete_user_infor"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/complete_user_infor_title"
+            android:text="用户名" />
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            style="@style/complete_user_infor_content"
+            android:layout_toLeftOf="@+id/img_user_name"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/img_user_name"
+            style="@style/complete_user_infor_img_next"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/selector_next"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/complete_user_infor"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/complete_user_infor_title"
+            android:text="昵称" />
+
+        <TextView
+            android:id="@+id/txt_nick_name"
+            style="@style/complete_user_infor_content"
+            android:layout_toLeftOf="@+id/img_nick_name"
+            android:text="请设置" />
+
+        <ImageView
+            android:id="@+id/img_nick_name"
+            style="@style/complete_user_infor_img_next"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/selector_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/complete_user_infor"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            style="@style/complete_user_infor_title"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/txt_sex"
+            style="@style/complete_user_infor_content"
+            android:layout_toLeftOf="@+id/img_sex"
+            android:text="请选择" />
+
+        <ImageView
+            android:id="@+id/img_sex"
+            style="@style/complete_user_infor_img_next"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/selector_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/complete_user_infor"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            style="@style/complete_user_infor_title"
+            android:text="所在城市" />
+
+        <TextView
+            android:id="@+id/txt_city"
+            style="@style/complete_user_infor_content"
+            android:layout_toLeftOf="@+id/img_city"
+            android:text="请选择" />
+
+        <ImageView
+            android:id="@+id/img_city"
+            style="@style/complete_user_infor_img_next"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/selector_next" />
+    </RelativeLayout>
+
+
+    <include layout="@layout/layout_confirm"></include>
+
+    <View
+        android:id="@+id/vMasker"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e0000000"
+        android:visibility="gone" />
+</LinearLayout>

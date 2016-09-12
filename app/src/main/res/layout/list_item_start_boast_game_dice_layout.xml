@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="10dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/default_head" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_head"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img_head"
+        android:text="名字"
+        android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/view_prompt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img_head" />
+
+    <teams.xianlin.com.teamshit.widget.Game.FiveDiceView
+        android:id="@+id/five_dice_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txt_name"></teams.xianlin.com.teamshit.widget.Game.FiveDiceView>
+
+    <View
+        android:id="@+id/view_start"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

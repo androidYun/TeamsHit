@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/handler_img_navi_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linear_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recycle_hander"
+        android:layout_below="@+id/handler_img_navi_top"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/img_handler_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_head" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/recycle_hander"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/linear_selector"
+        android:layout_centerVertical="true"
+        android:background="@color/bg"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rgroup_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtn_default"
+                    style="@style/pass_note_img_handler_radio_style"
+                    android:checked="false"
+                    android:drawableTop="@drawable/filter_dafault"
+                    android:text="默认效果" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_sumiao"
+                    style="@style/pass_note_img_handler_radio_style"
+                    android:drawableTop="@drawable/filter_sumiao"
+                    android:text="素描效果" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_miaobian"
+                    style="@style/pass_note_img_handler_radio_style"
+
+                    android:drawableTop="@drawable/filter_miaobian"
+                    android:text="描边效果" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_fanse"
+                    style="@style/pass_note_img_handler_radio_style"
+
+                    android:drawableTop="@drawable/filter_heibai"
+                    android:text="反色效果" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_penmo"
+                    style="@style/pass_note_img_handler_radio_style"
+
+                    android:drawableTop="@drawable/filter_penmo"
+                    android:text="喷墨效果" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_selector"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/selector_bg_color"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img_effect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_pass_effets" />
+
+        <ImageView
+            android:id="@+id/img_crop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_pass_crop" />
+
+        <ImageView
+            android:id="@+id/img_print"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_pass_print" />
+
+        <ImageView
+            android:id="@+id/img_scrawal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_pass_scrawal" />
+
+        <ImageView
+            android:id="@+id/img_roratal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_pass_roratal" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/navi_friend_defail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:background="@color/white"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="12dp">
+
+                <ImageView
+                    android:id="@+id/img_head"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/camera_icon" />
+
+                <TextView
+                    android:id="@+id/txt_nick_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/img_head"
+                    android:text="昵称"
+                    android:textSize="@dimen/sixten" />
+
+
+                <TextView
+                    android:id="@+id/txt_user_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_nick_name_title"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_head"
+                    android:gravity="center"
+                    android:text="对对号:"
+                    android:textSize="@dimen/sixten" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/register_relative"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/txt_title_remark"
+                    style="@style/register_title"
+                    android:text="设置备注" />
+
+                <TextView
+                    android:id="@+id/txt_remark"
+                    style="@style/register_edit_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/txt_title_remark"
+                    android:hint="备注信息" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_margin"></include>
+
+            <RelativeLayout style="@style/register_relative">
+
+                <TextView
+                    android:id="@+id/txt_title_phone"
+                    style="@style/register_title"
+                    android:text="电话号码" />
+
+                <TextView
+                    android:id="@+id/txt_phone"
+                    style="@style/register_edit_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/txt_title_phone" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_margin"></include>
+
+            <RelativeLayout style="@style/register_relative">
+
+                <TextView
+                    android:id="@+id/txt_title_address"
+                    style="@style/register_title"
+                    android:text="地址" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    style="@style/register_edit_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/txt_title_address" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_friend_circle"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_head"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_head"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_head"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_four"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_head"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_confirm"></include>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

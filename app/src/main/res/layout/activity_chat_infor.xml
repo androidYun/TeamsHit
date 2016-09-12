@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/navi_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@color/white"
+        android:paddingBottom="9dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="9dp">
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/default_head" />
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/img_head"
+            android:src="@drawable/add_friend_join_group" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/img_head"
+            android:layout_alignRight="@+id/img_head"
+            android:layout_below="@+id/img_head"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:text="备注" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/left_txt_right_img_layout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            style="@style/left_txt_right_img_txt"
+            android:text="置顶消息" />
+
+        <CheckBox
+            android:id="@+id/ckb_top_new"
+            style="@style/left_txt_right_img_img"
+            android:background="@drawable/selector_switch"
+            android:button="@null"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <teams.xianlin.com.teamshit.widget.line_view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        app:lineColor="@color/divider" />
+
+    <RelativeLayout style="@style/left_txt_right_img_layout">
+
+        <TextView
+            style="@style/left_txt_right_img_txt"
+            android:text="消息免打扰" />
+
+        <CheckBox
+            android:id="@+id/ckb_new_not_disturb"
+            style="@style/left_txt_right_img_img"
+            android:background="@drawable/selector_switch"
+            android:button="@null"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <teams.xianlin.com.teamshit.widget.line_view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        app:lineColor="@color/divider" />
+
+    <RelativeLayout
+        android:id="@+id/layout_chat_record"
+        style="@style/left_txt_right_img_layout">
+
+        <TextView
+            style="@style/left_txt_right_img_txt"
+            android:text="查看聊天记录" />
+
+
+    </RelativeLayout>
+
+    <teams.xianlin.com.teamshit.widget.line_view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        app:lineColor="@color/divider" />
+
+    <RelativeLayout
+        android:id="@+id/layout_clear_chat_history"
+        style="@style/left_txt_right_img_layout">
+
+        <TextView
+            style="@style/left_txt_right_img_txt"
+            android:text="清除聊天记录" />
+    </RelativeLayout>
+</LinearLayout>

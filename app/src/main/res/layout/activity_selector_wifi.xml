@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/navi_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/layout_add_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:paddingBottom="16dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="17dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/txt_wifi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="请选择wifi"
+            android:textColor="@color/alway_text_black"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/img_add_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_next" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:hint="输入路由器密码"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp" />
+
+    <include layout="@layout/layout_confirm"></include>
+
+</LinearLayout>

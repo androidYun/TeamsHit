@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/navi_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="12dp"
+        android:text="你需要发送验证申请，等待对方通过"
+        android:textColor="@color/alway_text_gray" />
+
+    <EditText
+        android:id="@+id/edit_reamark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/icon_cancle"
+        android:gravity="center_vertical"
+        android:hint="豆豆" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="29dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="不让他（她）看我的朋友圈"
+            android:textColor="@color/alway_text_black"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:id="@+id/ckb_friend_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_switch"
+            android:button="@null"
+            android:checked="false" />
+    </RelativeLayout>
+
+
+</LinearLayout>

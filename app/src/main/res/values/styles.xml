@@ -1,0 +1,298 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--拍照获取相册对话框的样式-->
+    <style name="progress_dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--拍照获取相册对话框的样式-->
+    <style name="select_photo_dialog_style">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="dialog_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        //进入时的动画
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+        //退出时的动画
+    </style>
+    <!--选择性别对话框样式-->
+    <style name="select_sex_dialog_style">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--选择性别对话框样式-->
+    <style name="dialog_style">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--选择单挑对话框的样式-->
+    <style name="select_single_dialog_style">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--选择城市的对话框-->
+    <style name="select_city_dialog_style">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--加载框的样式-->
+    <style name="load_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="dialog_select_content">
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+    <!--注册布局样式-->
+    <style name="register_relative">
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">19dp</item>
+        <item name="android:paddingBottom">19dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <!--注册头标题样式布局-->
+    <style name="register_title">
+        <item name="android:textSize">@dimen/sixten</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/register_title</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!--注册内容样式布局-->
+    <style name="register_edit_content">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+    <!--完善资料样式-->
+    <!--布局样式-->
+    <style name="complete_user_infor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">19dp</item>
+        <item name="android:paddingBottom">19dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="complete_user_infor_title">
+        <item name="android:textColor">@color/normal_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sixten</item>
+    </style>
+
+    <style name="complete_user_infor_content">
+        <item name="android:textColor">@color/gray_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/sixten</item>
+    </style>
+
+    <style name="complete_user_infor_img_next">
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!--完善资料选择性别样式-->
+    <style name="complete_user_infor_select_sex">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">14dp</item>
+
+        <item name="android:background">@drawable/rbtn_select_user_infor</item>
+    </style>
+    <!--主界面导航栏样式-->
+    <style name="main_button_navi_style">
+        <item name="android:textColor">@color/alway_text_gray</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+    <!-- 右上角popupwindow -->
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <!--涂鸦板处理图片选择图片样式-->
+    <style name="pass_note_img_handler_radio_style">
+        <item name="android:textColor">@color/alway_text_gray</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+    <!--传纸条  下面导航的图片-->
+    <style name="pass_note_buttom_navi">
+        <item name="android:layout_width">26dp</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginRight">18dp</item>
+    </style>
+    <!--传纸条  下面导航的图片-->
+    <style name="pass_note_express_buttom_navi">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/alway_text_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:paddingBottom">9dp</item>
+    </style>
+    <!--传纸条  编辑下面导航的图片-->
+    <style name="pass_note_edit_text_buttom_navi">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginRight">18dp</item>
+    </style>
+    <!--配置wifi  列表-->
+    <style name="congfig_wifi_item_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray_txt_color</item>
+        <item name="android:drawablePadding">16dp</item>
+    </style>
+    <!--左边文字 右边图标设置-->
+    <!--布局样式-->
+    <style name="left_txt_right_img_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">26dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="left_txt_right_img_txt">
+        <item name="android:textColor">@color/alway_text_black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/sixten</item>
+    </style>
+
+    <style name="left_txt_right_img_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="selector_group_chat" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/de_pic_checkbox</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:maxHeight">10.0dip</item>
+    </style>
+
+    <style name="comment_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!-- 显示对话框时当前的屏幕是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="social_pop_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+    <!--典型左边文字右边图片和文字布局样式-->
+    <style name="common_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">19dp</item>
+        <item name="android:paddingBottom">19dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="common_layout_left_title">
+        <item name="android:textColor">@color/normal_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sixten</item>
+    </style>
+
+    <style name="common_layout_right_title">
+        <item name="android:textColor">@color/gray_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/sixten</item>
+    </style>
+
+    <style name="common_layout_right_next_img">
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="btn_confirm_style">
+        <item name="android:background">@drawable/shape_btn_confirm</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">69dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

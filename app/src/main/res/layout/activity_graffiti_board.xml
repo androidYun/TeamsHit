@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <teams.xianlin.com.teamshit.widget.TitleNavi
+        android:id="@+id/title_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <teams.xianlin.com.teamshit.widget.GraffitiBoard.GraffitiView
+        android:id="@+id/img_graffiti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_selector"
+        android:layout_below="@+id/title_navi"
+        android:layout_margin="20dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_selector"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/selector_bg_color"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img_paint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_pass_graffiti_paint" />
+
+        <ImageView
+            android:id="@+id/img_eraser"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_pass_graffiti_eraser" />
+
+
+        <ImageView
+            android:id="@+id/img_print"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_pass_print" />
+
+        <ImageView
+            android:id="@+id/img_paint_width"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ico_dot_01" />
+
+        <ImageView
+            android:id="@+id/img_return"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_pass_graffiti_return" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Rong_Cloud_Android_IMKit_SDK_v2_6_6_stable_with_CallKit/Rong_Cloud_Android_IMKit_SDK_v2_6_6_stable_with_CallKit.iml" filepath="$PROJECT_DIR$/Rong_Cloud_Android_IMKit_SDK_v2_6_6_stable_with_CallKit/Rong_Cloud_Android_IMKit_SDK_v2_6_6_stable_with_CallKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TeamsHit.iml" filepath="$PROJECT_DIR$/TeamsHit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/galleryfinal/galleryfinal.iml" filepath="$PROJECT_DIR$/galleryfinal/galleryfinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
+    </modules>
+  </component>
+</project>

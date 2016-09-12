@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_bg">#ffffff</color>
+    <color name="bg">#f0f0f0</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--边框颜色-->
+    <color name="divider">#e0e0e0</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+    <!--白颜色-->
+    <color name="white">#FFFFFF</color>
+    <color name="main_theme_color">#0195ff</color>
+    <!--默认字体-->
+    <color name="normal_color">#323232</color>
+    <!--灰色字体-->
+    <color name="gray_color">#BBBBBB</color>
+    <!--半透明-->
+    <color name="transparent">#88323232</color>
+    <!--button默认显示颜色-->
+    <color name="btn_confirm_color">#12B7F5</color>
+    <!--button默认显示颜色-->
+    <color name="selctor_btn_confirm_color">#12B7F5</color>
+    <!--选择颜色蓝色-->
+    <color name="rbtn_select_color">#0A96CD</color>
+
+    <color name="btn_select_color">#6fdaf7</color>
+
+    <color name="transparent_background">#50000000</color>
+
+    <color name="register_prompt">#666666</color>
+
+    <color name="register_title">#323232</color>
+    <!--常用黑颜色-->
+    <color name="alway_text_black">#323232</color>
+    <!--常用灰颜色-->
+    <color name="alway_text_gray">#999999</color>
+
+    <!--默认选中显示颜色-->
+    <color name="selector_text_color">#12B7F5</color>
+    <!--默认选中显示颜色-->
+    <color name="selector_bg_color">#12B7F5</color>
+    <!--主题导航颜色-->
+    <color name="main_button_navi">#FAFCFC</color>
+    <!--选择颜色蓝色-->
+    <color name="txt_selector_color">#0A96CD</color>
+
+    <color name="btn_cancle_color">#DFDFDF</color>
+    <!--透明色-->
+    <color name="transparent_color">#00000000</color>
+    <!--红色-->
+    <color name="loght_pink_color">#FD5B35</color>
+    <!--搜索-->
+    <color name="serach_text_color">#B3B3B3</color>
+    <!--默认背景颜色-->
+    <color name="default_bg_color">#F5F5F5</color>
+    <!--Zxing 中的颜色-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <!--淡红色-->
+    <color name="pink_color">#FF4C6A</color>
+    <!--gray_txt_color-->
+    <color name="gray_txt_color">#666666</color>
+    <!--修改设备名称-->
+    <color name="edit_team_name">#E6E6E6</color>
+    <!--删除好友color-->
+    <color name="delete_friend">#E94F4F</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <!--朋友圈颜色值-->
+    <color name="color_232323">#232323</color>
+    <color name="color_8290AF">#8290AF</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="name_selector_color">#cccccc</color>
+    <color name="default_clickable_color">#cccccc</color>
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <color name="praise_item">#8290AF</color>
+    <color name="bg_no_photo">#EEEEEE</color>
+    <color name="message_bg">#575757</color>
+
+    <color name="blue_bg_color">#40BBF8</color>
+    <color name="blue_selector_bg_color">#0598E1</color>
+</resources>
