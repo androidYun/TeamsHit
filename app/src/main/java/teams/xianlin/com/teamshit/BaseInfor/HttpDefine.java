@@ -74,6 +74,22 @@ public class HttpDefine {
 
     public static final int Get_Group_Detail_Resp = 100034;//获取群组详情
 
+    public static final int SET_join_Group_Resp = 100035;//申请添加到群组
+
+    public static final int Invite_Friend_Into_Group = 100036;//邀请好友进群组
+
+    public static final int Set_Group_Name_Resp = 100037;//修改群组名称
+
+    public static final int set_Group_Type_Resp = 100038;//修改群组类型
+
+    public static final int set_Least_Coin_Resp = 100039;//修改最低碰碰币
+
+    public static final int set_Back_Group_Resp = 100040;//退出群组
+
+    public static final int Set_Game_People_Resp = 100041;//修改游戏人数
+
+    public static final int Set_Group_Verfition_Resp = 100042;//修改群组验证类型
+
 
     public static final int Config_Wifi_Resp = 20000;// 配置wifi
 

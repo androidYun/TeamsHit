@@ -69,5 +69,20 @@ public class HttpSeviceClass {
 
     public final static String Create_Group_Url = Constant.BASE_URL + "groups/createGroup" + Constant.Base_Foot_Url;//创建群组
 
-    public final static String Create_Group_Detail_Url = Constant.BASE_URL + "groups/getGroupDetail" + Constant.Base_Foot_Url;//获取群组详情
+
+    public final static String Apply_Join_Group_Url = Constant.BASE_URL + "groups/joinGroup" + Constant.Base_Foot_Url;//申请添加到群组
+
+    public final static String Invite_Griend_Into_Group_Url = Constant.BASE_URL + "groups/ inviteFriendIntoGroup" + Constant.Base_Foot_Url;//邀请好友进群组
+
+    public final static String Set_Group_Name_Url = Constant.BASE_URL + "groups/modifyGroupName" + Constant.Base_Foot_Url;//修改群组名称
+
+    public final static String Set_Group_Type_Url = Constant.BASE_URL + "groups/modifyGroupType" + Constant.Base_Foot_Url;//修改群组类型
+
+    public final static String Set_Group_Least_Coin_Url = Constant.BASE_URL + "groups/modifyGroupLeastCoins" + Constant.Base_Foot_Url;//修改最低碰碰币
+
+    public final static String Set_Back_Group_Url = Constant.BASE_URL + "groups/quitGroup" + Constant.Base_Foot_Url;//退出群组
+
+    public final static String Set_Group_Game_PeopleUrl = Constant.BASE_URL + "groups/setGamePeople" + Constant.Base_Foot_Url;//修改游戏人数
+
+    public final static String Set_Group_Verifition_Url = Constant.BASE_URL + "groups/setGroupVerifition" + Constant.Base_Foot_Url;//修改群组验证类型
 }
