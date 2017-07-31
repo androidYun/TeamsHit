@@ -19,7 +19,7 @@ import teams.xianlin.com.teamshit.widget.Progressdiaolg;
  */
 public abstract class BaseActivity extends FragmentActivity implements ClickCallback, View.OnClickListener {
 
-    public VaryViewHelper mVaryViewHelper;//加载错误界面的工具
+    public VaryViewHelper mVaryViewHelper;//加载错误界面的工具  李桂云
 
     public View empty_View;//数据为空的界面
 
